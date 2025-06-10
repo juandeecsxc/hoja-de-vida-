@@ -3,17 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HTml y css como un pro</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <table border="1">
-   <thead>
-     <tr>
-     <th>nombre</th>
-     <th>apellido</th>
-     <th>correo</th>
-     </tr>
-   </thead>
-    </table>
+    <!--Encabezado principal con navegacion-->
+    <header class="site-header">
+        <h1 class="site-title">Guia pro: HTML Y CSS</h1>  
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li><a href="#estructura">Estructura</a></li>
+                <li><a href="#buenas-practicas">Buenas Prácticas</a></li>
+                <li><a href="#trucos">Trucos Pro</a></li>
+                <li><a href="#visual">Visualización</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Estructura Semántica -->
+        <section id="estructura" class="content-section">
+            <h2 class="section-title">Estructura Semántica</h2>
+            <p>Una estructura semántica ayuda a los navegadores y a los usuarios a entender el contenido.</p>
+            <pre><code>&lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;section&gt;, &lt;footer&gt;</code></pre>
+            <div class="container">
+                <header>Encabezado</header>
+                <nav>Menu</nav>
+                <main>Contenido principal</main>
+                <footer>Pie de pagina</footer>
+            </div>
+        </section>
+
+         <!-- Buenas Prácticas -->
+        <section id="buenas-practicas" class="practice-section">
+            <h2 class="section-title">Buenas Prácticas</h2>
+            <div class="practice-grid">
+                <article class="practice-card">
+                    <h3 class="practice-title">Notas</h3>
+                    <p>Las notas ayudan a recordar detalles importantes.</p>
+                </article>
+                <article class="practice-card">
+                    <h3 class="practice-title">Nombres de Clases</h3>
+                    <p>Usa nombres de clases descriptivos y en inglés si es un estándar del equipo.</p>
+                </article>
+                <article class="practice-card">
+                    <h3 class="practice-title">Trucos de Teclado</h3>
+                    <p>Utiliza atajos de teclado en tu editor de código.</p>
+                </article>
+                <article class="practice-card">
+                    <h3 class="practice-title">Visualización</h3>
+                    <p>Previsualiza tus cambios en tiempo real.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- trucos de la actividad -->
+        <section id="trucos" class="content-section">
+            <h2 class="section-title">Trucos</h2> 
+            <p>Estos son algunos trucos para mejorar tu flujo de trabajo con HTML y CSS:</p>           
+            <section id="trucos" class="tab-section">
+              <table class="emmet-table">
+                <thead>
+                  <tr>
+                    <th>Emmet / Atajo</th>
+                    <th>Resultado / Función</th>
+                  </tr>
+            </thead>
+    <tbody>
+      <tr><td><code>!</code></td><td>Inserta la estructura básica del documento HTML5</td></tr>
+      <tr><td><code>ul&gt;li*5</code></td><td>Genera una lista <code>&lt;ul&gt;</code> con 5 elementos <code>&lt;li&gt;</code></td></tr>
+      <tr><td><code>div.className</code></td><td>Crea un <code>&lt;div class="className"&gt;</code></td></tr>
+      <tr><td><code>#idName</code></td><td>Crea un <code>&lt;div id="idName"&gt;</code></td></tr>
+      <tr><td><code>section&gt;h2+p</code></td><td>Crea una <code>&lt;section&gt;</code> con un <code>&lt;h2&gt;</code> y un <code>&lt;p&gt;</code></td></tr>
+      <tr><td><code>.box{Hola}</code></td><td>Crea un <code>&lt;div class="box"&gt;Hola&lt;/div&gt;</code></td></tr>
+      <tr><td><code>nav&gt;ul&gt;li*3&gt;a</code></td><td>Estructura de navegación con 3 enlaces</td></tr>
+      <tr><td><code>input:checkbox</code></td><td><code>&lt;input type="checkbox" /&gt;</code></td></tr>
+      <tr><td><code>img:srcset</code></td><td>Imagen con <code>srcset</code> para responsive</td></tr>
+      <tr><td><code>link:css</code></td><td><code>&lt;link rel="stylesheet" href="style.css" /&gt;</code></td></tr>
+    </tbody>
+  </table>
+</section>
+
+
+    <!-- Visualización -->
+    <section id="visual" class="content-section">
+         <h2 class="section-title">Visualización</h2>
+        <p>Utiliza herramientas de desarrollo para inspeccionar y depurar tu código.</p>
+        <div class="visual-demo">
+            <div class="code">
+            <pre><code>.box {
+  background: lightblue;
+  padding: 1rem;
+}</code></pre>
+        </div>
+         <div class="result">
+            <div class="box">Caja de ejemplo</div>
+            </div>
+        </section>
+</main>
+
+
+    <!--pie de pagina en redes sociales-->
+    <footer class="footer">
+        <p>Actividad 3: Notas</p>
+        <p>© 2025 juan carlos balcero</p>
+        <div class="social-links">
+       <a href="https://github.com/juandeecsxc">GitHub</a> | <a href="https://www.linkedin.com/in/juanbalcero/">LinkedIn</a>
+    </div>
+  </footer>
+
 </body>
 </html>
